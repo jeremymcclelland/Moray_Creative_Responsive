@@ -12,6 +12,15 @@
                 box-shadow: 0 5px 10px #aaa;
 }
 
+/*mixin to take care of any transition props*/
+.transition-properties(...) {
+  -webkit-transition: @arguments;
+  -moz-transition: @arguments;
+  -o-transition: @arguments;
+  transition: @arguments;
+}
+
+
 /*=======================================*/
 
 html {
@@ -124,13 +133,16 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 
+    .transition-properties(background-color .75s ease;);
+
+
     color: white;
     background: @morayCreativeBlue;
 }
 
 nav a:hover {
     color: white;
-    background: darken(@morayCreativeBlue, 5%);
+    background-color: darken(@morayCreativeBlue, 5%);;
 }
 
 nav a:visited {
