@@ -5,6 +5,7 @@
   -moz-box-shadow: 0 5px 10px #aaa;
   box-shadow: 0 5px 10px #aaa;
 }
+/*mixin to take care of any transition props*/
 /*=======================================*/
 html {
   color: #00203d;
@@ -94,12 +95,16 @@ nav a {
   text-align: center;
   text-decoration: none;
   font-weight: bold;
+  -webkit-transition: background-color 0.75s ease;
+  -moz-transition: background-color 0.75s ease;
+  -o-transition: background-color 0.75s ease;
+  transition: background-color 0.75s ease;
   color: white;
   background: #002d56;
 }
 nav a:hover {
   color: white;
-  background: #00203d;
+  background-color: #00203d;
 }
 nav a:visited {
   text-decoration: none;
