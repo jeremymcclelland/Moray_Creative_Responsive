@@ -31,7 +31,14 @@
   transition: @arguments;
 }
 
+.scale (@factor) {
+    -webkit-transform: scale(@factor);
+    -moz-transform: scale(@factor);
+    -ms-transform: scale(@factor);
+    -o-transform: scale(@factor);
+    transform: scale(@factor);
 
+}
 /*=======================================*/
 
 html {
@@ -236,11 +243,7 @@ aside h3, #bottomFooter h3 {
     display: block;
     margin: 0px auto 0px auto;
     max-width: 90%;
-    -webkit-transform: scale(.90);
-    -moz-transform: scale(.90);
-    -ms-transform: scale(.90);
-    -o-transform: scale(.90);
-    transform: scale(.90);
+    .scale(.90);
 
 }
 
@@ -250,11 +253,7 @@ aside img {
 }
 
 #MorayLogo:hover {
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1);
+    .scale(1);
 
 }
 aside {
