@@ -69,6 +69,7 @@ body {
 }
 .footer-container {
   border-top: 20px solid #ce4a27;
+  overflow: auto;
 }
 .header-container,
 .footer-container {
@@ -124,7 +125,7 @@ nav a:visited {
 }
 .footer-container footer {
   color: white;
-  padding: 20px 0;
+  padding: 0px 0;
 }
 /* ===============
     ALL: IE Fixes
@@ -144,6 +145,29 @@ h3 {
 aside h3,
 #bottomFooter h3 {
   color: white;
+}
+/*footer styles*/
+div#bottomFooter div.leftCol {
+  float: left;
+}
+div#bottomFooter div.rightCol {
+  float: right;
+  text-align: right;
+}
+#bottomFooter div.rightCol a {
+  color: white;
+  text-decoration: none;
+}
+#bottomFooter div.rightCol a:hover {
+  color: #dd6a4b;
+}
+#bottomFooter p {
+  margin-bottom: .5em;
+  margin-top: .5em;
+  color: white;
+}
+#bottomFooter small {
+  font-style: italic;
 }
 /* ==========================================================================
    Media Queries
