@@ -122,6 +122,10 @@ body {
     MOBILE: Menu
    ============== */
 
+
+.title {
+    text-align: center;
+}
 nav ul {
     margin: 0;
     padding: 0;
@@ -135,7 +139,7 @@ nav a {
 
     text-align: center;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
 
     .fadeTransition(background-color .75s ease;);
 
@@ -187,13 +191,19 @@ nav a:visited {
    Author's custom styles
    ========================================================================== */
 
-
+h1 {
+    font-weight: 600; 
+}
 
 h2 { 
     color: lighten(@morayCreativeBlue, 5%);
+    font-weight: 600; 
+
 }
 h3 {
     color: lighten(@morayCreativeBlue, 10%);
+    font-weight: 600; 
+
 }
 
 aside h3, #bottomFooter h3 {
@@ -203,12 +213,14 @@ aside h3, #bottomFooter h3 {
 
 /*footer styles*/
 
+
 div#bottomFooter div.leftCol {
-    float: left;
+    text-align: center;
+    margin: 0 auto 0 auto;
 }
 div#bottomFooter div.rightCol {
-    float: right;
-    text-align: right;
+    text-align: center;
+    margin: 0 auto 0 auto;
 }
 #bottomFooter div.rightCol a {
     color: white;
@@ -242,7 +254,7 @@ div#bottomFooter div.rightCol {
         float: left;
         width: 27%;
         margin: 0 1.7%;
-        padding: 25px 2%;
+        padding: 32px 2%;
         margin-bottom: 0;
     }
 
@@ -304,6 +316,36 @@ div#bottomFooter div.rightCol {
         float: right;
         width: 28%;
     }
+
+/* ============
+    WIDE: Footer
+   ============ */
+
+    div#bottomFooter div.leftCol {
+        float: left;
+        text-align: left;
+    }
+    div#bottomFooter div.rightCol {
+        float: right;
+        text-align: right;
+    }
+    #bottomFooter div.rightCol a {
+        color: white;
+        text-decoration: none;
+    
+    }
+    #bottomFooter div.rightCol a:hover {
+        color: lighten(@morayCreativeOrange, 10%);
+    }
+    #bottomFooter p {
+        margin-bottom: .75em;
+        margin-top: .75em;
+        color: white;
+    }
+    #bottomFooter small {
+        font-style: italic;
+    }
+
 }
 
 @media only screen and (min-width: 1140px) {

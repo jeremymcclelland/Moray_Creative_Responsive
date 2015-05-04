@@ -86,6 +86,9 @@ body {
 /* ==============
     MOBILE: Menu
    ============== */
+.title {
+  text-align: center;
+}
 nav ul {
   margin: 0;
   padding: 0;
@@ -97,7 +100,7 @@ nav a {
   padding: 15px 0;
   text-align: center;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
   -webkit-transition: background-color 0.75s ease;
   -moz-transition: background-color 0.75s ease;
   -o-transition: background-color 0.75s ease;
@@ -138,11 +141,16 @@ nav a:visited {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+h1 {
+  font-weight: 600;
+}
 h2 {
   color: #003a70;
+  font-weight: 600;
 }
 h3 {
   color: #004889;
+  font-weight: 600;
 }
 aside h3,
 #bottomFooter h3 {
@@ -150,11 +158,12 @@ aside h3,
 }
 /*footer styles*/
 div#bottomFooter div.leftCol {
-  float: left;
+  text-align: center;
+  margin: 0 auto 0 auto;
 }
 div#bottomFooter div.rightCol {
-  float: right;
-  text-align: right;
+  text-align: center;
+  margin: 0 auto 0 auto;
 }
 #bottomFooter div.rightCol a {
   color: white;
@@ -182,7 +191,7 @@ div#bottomFooter div.rightCol {
     float: left;
     width: 27%;
     margin: 0 1.7%;
-    padding: 25px 2%;
+    padding: 32px 2%;
     margin-bottom: 0;
   }
   nav li:first-child a {
@@ -231,6 +240,32 @@ div#bottomFooter div.rightCol {
   .main aside {
     float: right;
     width: 28%;
+  }
+  /* ============
+    WIDE: Footer
+   ============ */
+  div#bottomFooter div.leftCol {
+    float: left;
+    text-align: left;
+  }
+  div#bottomFooter div.rightCol {
+    float: right;
+    text-align: right;
+  }
+  #bottomFooter div.rightCol a {
+    color: white;
+    text-decoration: none;
+  }
+  #bottomFooter div.rightCol a:hover {
+    color: #dd6a4b;
+  }
+  #bottomFooter p {
+    margin-bottom: .75em;
+    margin-top: .75em;
+    color: white;
+  }
+  #bottomFooter small {
+    font-style: italic;
   }
 }
 @media only screen and (min-width: 1140px) {
