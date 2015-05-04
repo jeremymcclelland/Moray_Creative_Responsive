@@ -78,7 +78,7 @@ body {
   background: #002d56;
 }
 .main aside {
-  background: #00203d;
+  background: #ce4a27;
 }
 .title {
   color: white;
@@ -152,11 +152,17 @@ h3 {
   color: #004889;
   font-weight: 600;
 }
+/*aside styles====================*/
 aside h3,
 #bottomFooter h3 {
   color: white;
 }
-/*footer styles*/
+aside img {
+  display: block;
+  margin: 0px auto 0px auto;
+  max-width: 90%;
+}
+/*footer styles====================*/
 div#bottomFooter div.leftCol {
   text-align: center;
   margin: 0 auto 0 auto;
