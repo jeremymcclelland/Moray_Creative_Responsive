@@ -7,6 +7,7 @@
   box-shadow: 0 5px 10px #aaa;
 }
 /*mixin to take care of any transition props*/
+/*parameters: all .5s ease*/
 /*=======================================*/
 html {
   color: #00203d;
@@ -165,10 +166,32 @@ aside h3,
 #bottomFooter h3 {
   color: white;
 }
-aside img {
+#MorayLogo {
   display: block;
   margin: 0px auto 0px auto;
   max-width: 90%;
+}
+aside img {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#MorayLogo:hover {
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+  transform: scale(1.02);
+}
+aside {
+  -webkit-transition: background-color 0.75s ease;
+  -moz-transition: background-color 0.75s ease;
+  -o-transition: background-color 0.75s ease;
+  transition: background-color 0.75s ease;
+}
+aside:hover {
+  background-color: #b94223;
 }
 /*footer styles====================*/
 div#bottomFooter div.leftCol {
