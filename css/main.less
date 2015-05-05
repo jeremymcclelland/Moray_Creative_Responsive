@@ -22,6 +22,16 @@
   -moz-transition: @arguments;
   -o-transition: @arguments;
   transition: @arguments;
+/*fixes blurry logo*/
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  -webkit-transform: translateZ(0) scale(1.0, 1.0);
+  -moz-transform: translateZ(0) scale(1.0, 1.0);
+  -o-transform: translateZ(0) scale(1.0, 1.0);
+  transform: translateZ(0) scale(1.0, 1.0);
 }
 
 .fadeTransition(...) {
@@ -251,8 +261,8 @@ aside h3, #bottomFooter h3 {
 #MorayLogo {
     display: block;
     margin: 0px auto 0px auto;
-    max-width: 90%;
-    .scale(.98);
+    max-width: 98%;
+    .scale(.95);
 
 }
 
@@ -309,7 +319,8 @@ div#bottomFooter div.rightCol {
      25% {border-bottom: 10px solid #FF2D00;}
      50% {border-bottom: 10px solid #FF0512;}
      75% {border-bottom: 10px solid #FF6204;}
-     100% {border-bottom: 10px solid #EB9500;}  
+     100% {border-bottom: 10px solid #EB9500;}
+
 }
 @-moz-keyframes bottomBorderAnimate {
       0% {border-bottom: 10px solid @morayCreativeOrange;}
