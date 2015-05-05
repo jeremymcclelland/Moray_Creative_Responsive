@@ -69,6 +69,10 @@ body {
    =================== */
 .header-container {
   border-bottom: 20px solid #ce4a27;
+  -webkit-animation: borderAnimate 10s infinite alternate;
+  -moz-animation: borderAnimate 10s infinite alternate;
+  -o-animation: borderAnimate 10s infinite alternate;
+  animation: borderAnimate 10s infinite alternate;
 }
 .footer-container {
   border-top: 20px solid #ce4a27;
@@ -170,11 +174,11 @@ aside h3,
   display: block;
   margin: 0px auto 0px auto;
   max-width: 90%;
-  -webkit-transform: scale(0.9);
-  -moz-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  -o-transform: scale(0.9);
-  transform: scale(0.9);
+  -webkit-transform: scale(0.98);
+  -moz-transform: scale(0.98);
+  -ms-transform: scale(0.98);
+  -o-transform: scale(0.98);
+  transform: scale(0.98);
 }
 aside img {
   -webkit-transition: all 0.5s ease;
@@ -221,6 +225,75 @@ div#bottomFooter div.rightCol {
 }
 #bottomFooter small {
   font-style: italic;
+}
+/*animated border test*/
+@-webkit-keyframes borderAnimate {
+  0% {
+    border-bottom: 20px solid #ce4a27;
+  }
+  25% {
+    border-bottom: 20px solid #35130A;
+  }
+  50% {
+    border-bottom: 20px solid #B44122;
+  }
+  75% {
+    border-bottom: 20px solid #C14525;
+  }
+  100% {
+    border-bottom: 20px solid #9B381D;
+  }
+}
+@-moz-keyframes borderAnimate {
+  0% {
+    border-bottom: 20px solid #ce4a27;
+  }
+  25% {
+    border-bottom: 20px solid #35130A;
+  }
+  50% {
+    border-bottom: 20px solid #B44122;
+  }
+  75% {
+    border-bottom: 20px solid #C14525;
+  }
+  100% {
+    border-bottom: 20px solid #9B381D;
+  }
+}
+@-o-keyframes borderAnimate {
+  0% {
+    border-bottom: 20px solid #ce4a27;
+  }
+  25% {
+    border-bottom: 20px solid #35130A;
+  }
+  50% {
+    border-bottom: 20px solid #B44122;
+  }
+  75% {
+    border-bottom: 20px solid #C14525;
+  }
+  100% {
+    border-bottom: 20px solid #9B381D;
+  }
+}
+@keyframes borderAnimate {
+  0% {
+    border-bottom: 20px solid #ce4a27;
+  }
+  25% {
+    border-bottom: 20px solid #35130A;
+  }
+  50% {
+    border-bottom: 20px solid #B44122;
+  }
+  75% {
+    border-bottom: 20px solid #C14525;
+  }
+  100% {
+    border-bottom: 20px solid #9B381D;
+  }
 }
 /* ==========================================================================
    Media Queries

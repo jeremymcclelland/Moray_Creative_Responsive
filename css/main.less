@@ -114,6 +114,10 @@ body {
 
 .header-container {
     border-bottom: 20px solid @morayCreativeOrange;
+     -webkit-animation: borderAnimate 10s infinite alternate;
+     -moz-animation: borderAnimate 10s infinite alternate;
+     -o-animation: borderAnimate 10s infinite alternate;
+     animation: borderAnimate 10s infinite alternate;
 }
 
 .footer-container {
@@ -243,7 +247,7 @@ aside h3, #bottomFooter h3 {
     display: block;
     margin: 0px auto 0px auto;
     max-width: 90%;
-    .scale(.90);
+    .scale(.98);
 
 }
 
@@ -291,6 +295,39 @@ div#bottomFooter div.rightCol {
 #bottomFooter small {
     font-style: italic;
 }
+
+
+/*animated border test*/
+
+@-webkit-keyframes borderAnimate {
+      0% {border-bottom: 20px solid @morayCreativeOrange;}
+     25% {border-bottom: 20px solid #35130A;}
+     50% {border-bottom: 20px solid #B44122;}
+     75% {border-bottom: 20px solid #C14525;}
+     100% {border-bottom: 20px solid #9B381D;}  
+}
+@-moz-keyframes borderAnimate {
+      0% {border-bottom: 20px solid @morayCreativeOrange;}
+     25% {border-bottom: 20px solid #35130A;}
+     50% {border-bottom: 20px solid #B44122;}
+     75% {border-bottom: 20px solid #C14525;}
+     100% {border-bottom: 20px solid #9B381D;}  
+}
+@-o-keyframes borderAnimate {
+      0% {border-bottom: 20px solid @morayCreativeOrange;}
+     25% {border-bottom: 20px solid #35130A;}
+     50% {border-bottom: 20px solid #B44122;}
+     75% {border-bottom: 20px solid #C14525;}
+     100% {border-bottom: 20px solid #9B381D;}  
+}
+@keyframes borderAnimate {
+      0% {border-bottom: 20px solid @morayCreativeOrange;}
+     25% {border-bottom: 20px solid #35130A;}
+     50% {border-bottom: 20px solid #B44122;}
+     75% {border-bottom: 20px solid #C14525;}
+     100% {border-bottom: 20px solid #9B381D;}  
+}
+
 
 
 /* ==========================================================================
