@@ -113,16 +113,21 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 20px solid @morayCreativeOrange;
-     -webkit-animation: borderAnimate 10s infinite alternate;
-     -moz-animation: borderAnimate 10s infinite alternate;
-     -o-animation: borderAnimate 10s infinite alternate;
-     animation: borderAnimate 10s infinite alternate;
+    border-bottom: 10px solid @morayCreativeOrange;
+    -webkit-animation: bottomBorderAnimate 5s infinite alternate;
+    -moz-animation: bottomBorderAnimate 5s infinite alternate;
+    -o-animation: bottomBorderAnimate 5s infinite alternate;
+    animation: bottomBorderAnimate 5s infinite alternate;
+
 }
 
 .footer-container {
-    border-top: 20px solid @morayCreativeOrange;
+    border-top: 10px solid @morayCreativeOrange;
     overflow: auto;
+    -webkit-animation: topBorderAnimate 5s infinite alternate;
+    -moz-animation: topBorderAnimate 5s infinite alternate;
+    -o-animation: topBorderAnimate 5s infinite alternate;
+    animation: topBorderAnimate 5s infinite alternate;
 }
 
 .header-container,
@@ -299,35 +304,64 @@ div#bottomFooter div.rightCol {
 
 /*animated border test*/
 
-@-webkit-keyframes borderAnimate {
-      0% {border-bottom: 20px solid @morayCreativeOrange;}
-     25% {border-bottom: 20px solid #35130A;}
-     50% {border-bottom: 20px solid #B44122;}
-     75% {border-bottom: 20px solid #C14525;}
-     100% {border-bottom: 20px solid #9B381D;}  
+@-webkit-keyframes bottomBorderAnimate {
+      0% {border-bottom: 10px solid @morayCreativeOrange;}
+     25% {border-bottom: 10px solid #FF2D00;}
+     50% {border-bottom: 10px solid #FF0512;}
+     75% {border-bottom: 10px solid #FF6204;}
+     100% {border-bottom: 10px solid #EB9500;}  
 }
-@-moz-keyframes borderAnimate {
-      0% {border-bottom: 20px solid @morayCreativeOrange;}
-     25% {border-bottom: 20px solid #35130A;}
-     50% {border-bottom: 20px solid #B44122;}
-     75% {border-bottom: 20px solid #C14525;}
-     100% {border-bottom: 20px solid #9B381D;}  
+@-moz-keyframes bottomBorderAnimate {
+      0% {border-bottom: 10px solid @morayCreativeOrange;}
+     25% {border-bottom: 10px solid #FF2D00;}
+     50% {border-bottom: 10px solid #FF0512;}
+     75% {border-bottom: 10px solid #FF6204;}
+     100% {border-bottom: 10px solid #EB9500;}  
 }
-@-o-keyframes borderAnimate {
-      0% {border-bottom: 20px solid @morayCreativeOrange;}
-     25% {border-bottom: 20px solid #35130A;}
-     50% {border-bottom: 20px solid #B44122;}
-     75% {border-bottom: 20px solid #C14525;}
-     100% {border-bottom: 20px solid #9B381D;}  
+@-o-keyframes bottomBorderAnimate {
+      0% {border-bottom: 10px solid @morayCreativeOrange;}
+     25% {border-bottom: 10px solid #FF2D00;}
+     50% {border-bottom: 10px solid #FF0512;}
+     75% {border-bottom: 10px solid #FF6204;}
+     100% {border-bottom: 10px solid #EB9500;} 
 }
-@keyframes borderAnimate {
-      0% {border-bottom: 20px solid @morayCreativeOrange;}
-     25% {border-bottom: 20px solid #35130A;}
-     50% {border-bottom: 20px solid #B44122;}
-     75% {border-bottom: 20px solid #C14525;}
-     100% {border-bottom: 20px solid #9B381D;}  
+@keyframes bottomBorderAnimate {
+      0% {border-bottom: 10px solid @morayCreativeOrange;}
+     25% {border-bottom: 10px solid #FF2D00;}
+     50% {border-bottom: 10px solid #FF0512;}
+     75% {border-bottom: 10px solid #FF6204;}
+     100% {border-bottom: 10px solid #EB9500;} 
 }
 
+/*top*/
+@-webkit-keyframes topBorderAnimate {
+      0% {border-top: 10px solid @morayCreativeOrange;}
+     25% {border-top: 10px solid #FF2D00;}
+     50% {border-top: 10px solid #FF0512;}
+     75% {border-top: 10px solid #FF6204;}
+     100% {border-top: 10px solid #EB9500;} 
+}
+@-moz-keyframes topBorderAnimate {
+      0% {border-bottom: 10px solid @morayCreativeOrange;}
+     25% {border-bottom: 10px solid #FF2D00;}
+     50% {border-bottom: 10px solid #FF0512;}
+     75% {border-bottom: 10px solid #FF6204;}
+     100% {border-bottom: 10px solid #EB9500;}  
+}
+@-o-keyframes topBorderAnimate {
+      0% {border-top: 10px solid @morayCreativeOrange;}
+     25% {border-top: 10px solid #FF2D00;}
+     50% {border-top: 10px solid #FF0512;}
+     75% {border-top: 10px solid #FF6204;}
+     100% {border-top: 10px solid #EB9500;} 
+}
+@keyframes topBorderAnimate {
+      0% {border-top: 10px solid @morayCreativeOrange;}
+     25% {border-top: 10px solid #FF2D00;}
+     50% {border-top: 10px solid #FF0512;}
+     75% {border-top: 10px solid #FF6204;}
+     100% {border-top: 10px solid #EB9500;} 
+}
 
 
 /* ==========================================================================
