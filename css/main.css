@@ -162,11 +162,11 @@ h3 {
   font-weight: 600;
 }
 /*articles====================*/
-article header a {
+article a {
   text-decoration: none;
   color: #ce4a27;
 }
-article header a:hover {
+article a:hover {
   color: #dd6a4b;
 }
 /*aside styles====================*/
